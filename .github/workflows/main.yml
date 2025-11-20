@@ -1,0 +1,17 @@
+name: delpoy la paginaa 
+on:
+  push:
+   branches:
+   - main 
+jobs:
+  deplay-page:  
+   runs-on: ubuntu-latest
+   steps:
+    - name: checkout 
+      uses: actions/checkout@v2.3.1
+
+    - name: delpoy
+      uses: JamesIves/github-pages-deploy-actions@4.1.4
+      with: 
+         branch: gh-pages # the branh the action should deploy to.
+         folder: public # the folder the action should deploy. 
