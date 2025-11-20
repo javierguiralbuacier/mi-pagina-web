@@ -3,6 +3,7 @@ on:
   push:
    branches:
    -main 
+   - main 
 jobs:
   deplay-page:  
    runs-on: ubuntu-latest
